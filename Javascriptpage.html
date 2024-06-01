@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--This page is the E-Mail Newsletter Signup Script.-->
+    <!--Steven Sakayan 22/05/2024-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Steven Sakayan | Newsletter Signup</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Javascriptpage.css">
+    <script src="js/Javascriptpage.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h2>Horizon Expeditions Newsletter Sign Up</h2>
+        <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" maxlength="60" placeholder="Required" autofocus>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" maxlength="60" placeholder="Required">
+            <br><br>
+            <label for="email">E-Mail:</label>
+            <input type="text" id="email" maxlength="60">
+            <br><br>
+            <fieldset>
+                <legend>Age Range:</legend>
+                <input type="radio" id="15-25" name="age">
+                <label for="15-25">15-25</label>
+                <input type="radio" id="26-35" name="age">
+                <label for="26-35">26-35</label>
+                <input type="radio" id="36-45" name="age">
+                <label for="36-45">36-45</label>
+                <input type="radio" id="46-55" name="age">
+                <label for="46-55">46-55</label>
+                <input type="radio" id="55+" name="age">
+                <label for="55+">55+</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Services Offered:</legend>
+                <input type="checkbox" id="service1" name="services">
+                <label for="service1">Flight Booking</label>
+                <input type="checkbox" id="service2" name="services">
+                <label for="service2">Accomodation</label>
+                <input type="checkbox" id="service3" name="services">
+                <label for="service3">Transportation</label>
+                <input type="checkbox" id="service4" name="services">
+                <label for="service4">Travel Insurance</label>
+                <input type="checkbox" id="service5" name="services">
+                <label for="service5">Tour Packages</label>
+            </fieldset>
+            <br><br>
+            <div class="notes">
+                <label>Notes:</label>
+                <textarea id="notes" rows="3" cols="60"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Sign Up" onclick="submitForm(form)">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer>
+        <p>This webpage was designed and created by Steven Sakayan. Contact me through ssakayan274@gmail.com. &copy; Steven Sakayan 2024.</p>
+    </footer>
+</body>
+</html>

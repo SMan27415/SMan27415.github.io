@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.skills {
+    vertical-align:central;
+    margin-left:20px;
+}
+
+.skills li {
+    font-size:1.25em;
+}
+
+.images {
+    width: 300px;
+}
+
+.images img {
+    width: 300px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:5px;
+}
